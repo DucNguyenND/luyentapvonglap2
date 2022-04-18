@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập a'))
+    for(let m = 1; m <= a;m++) {
+        let str = ''
+        if (m==1){
+            for (let l = 1; l <= a; l++) {
+                str += '*'
+            }
+        } else {
+            for (let r = 1; r <=(m-1); r++) {
+                str += '&nbsp&nbsp'
+            }
+            for (let s = 1; s <= (a -m+1); s++) {
+                str += '*'
+            }
+        }
+        document.write(str+'<br>' )
+    }
+</script>
+</body>
+</html>
